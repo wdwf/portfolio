@@ -6,6 +6,8 @@
 ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![nodejs](https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
+![backgound](https://github.com/wdwf/portfolio/assets/28903617/e08ab4c0-ea6a-4c10-9a99-3df2d2652213)
+
 ## 💻 Descrição do Projeto
 
 Este projeto representa a materialização do meu percurso de desenvolvimento, apresentando meus projetos e conhecimentos por meio de um site estático. Explore os detalhes de implementações variadas, desde ferramentas e frameworks até metodologias, refletindo minha paixão por construir soluções impactantes. Além disso, este espaço serve como uma porta aberta para colaborações e novos desafios, onde estou sempre pronto para oferecer auxílio e expertise na concepção de novos sistemas e projetos.
