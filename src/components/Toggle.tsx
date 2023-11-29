@@ -62,8 +62,7 @@ export function Toggle() {
         focus:before:opacity-[0.12] 
         focus:before:shadow-[3px_-1px_0px_13px_rgba(0,0,0,0.6)] 
         focus:before:transition-[box-shadow_0.2s,transform_0.2s] 
-        focus:after:absolute focus:after:z-[1] 
-        //focus:after:w-5 focus:after:rounded-full 
+        focus:after:absolute focus:after:z-[1]
         focus:after:content-[''] 
         checked:focus:border-primary 
         checked:focus:bg-primary 
