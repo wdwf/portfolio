@@ -1,8 +1,13 @@
-export function Toggle() {
+import { useContext } from 'react';
+import ThemeContext from '../context/ThemeContext';
+
+export function ThemeSwitch() {
+  const { currentTheme, changeCurrentTheme } = useContext(ThemeContext);
+
   return (
     <div className="flex items-center gap-3">
       <label htmlFor="flexSwitch" className="inline-block pl-[0.15rem] hover:cursor-pointer">
-        Claro
+        {currentTheme === 'light' ? 'Claro' : 'Escuro'}
       </label>
 
       <input
@@ -69,6 +74,8 @@ export function Toggle() {
         checked:focus:before:ml-[1.0625rem] 
         checked:focus:before:scale-100 
         checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s]"
+        defaultChecked={currentTheme === 'light' ? true : false}
+        onClick={() => changeCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}
       />
     </div>
   );
