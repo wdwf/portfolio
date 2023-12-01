@@ -10,3 +10,11 @@
   font-family: 'Satoshi-Variable';
   src: url('../assets/fonts/Satoshi-Variable.ttf');
 }
+@font-face {
+  font-family: 'Modelica02-Medium';
+  src: url('../assets/fonts/BwModelicaSS02-Medium.otf');
+}
+@font-face {
+  font-family: 'Modelica02-Bold';
+  src: url('../assets/fonts/BwModelicaSS02-Bold.otf');
+}
