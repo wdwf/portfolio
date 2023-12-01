@@ -1,6 +1,6 @@
 import { CardProjects } from '../components/CardProject';
 import ThumbnailProjectOne from '../assets/ThumbnailProjectOne.png';
-import { AreaWIP } from '../components/areaWIP';
+import { AreaWIP } from '../components/AreaWIP';
 
 export function Projects() {
   return (
