@@ -3,7 +3,7 @@ import work from '../assets/WORK.png';
 
 export function Follow() {
   return (
-    <section className="w-full flex flex-col items-center py-16">
+    <section id="follow" className="w-full flex flex-col items-center py-16">
       <img src={work} alt="" className="w-40 animate-spinSlow" />
       <h3 className="text-5xl font-black font-SpaceGrotesk py-16">Vamos Trabalha juntos</h3>
       <div className="flex gap-8">

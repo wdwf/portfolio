@@ -9,8 +9,8 @@ export function Nav() {
         items-center 
         justify-between 
         w-full 
-        px-8 
-        py-6 
+        px-16 
+        py-8
         border-b 
         border-gray-400 
         font-SpaceGrotesk
@@ -27,13 +27,13 @@ export function Nav() {
             <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#project">Projetos</a>
+            <a href="#projects">Projetos</a>
           </li>
           <li>
-            <a href="#service">Serviço</a>
+            <a href="#ability's">Habilidades</a>
           </li>
           <li>
-            <a href="#contact">Contato</a>
+            <a href="#follow">Contato</a>
           </li>
         </ul>
         <ThemeSwitch />

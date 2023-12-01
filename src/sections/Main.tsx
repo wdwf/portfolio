@@ -3,10 +3,10 @@ import ImageMain from '../assets/ImageMain.png';
 
 export function Main() {
   return (
-    <main className='min-h-screen w-full bg-[url("../assets/backgroundMain.png")] relative'>
-      <div className="h-full w-full flex items-center justify-between px-8 pt-16">
+    <main id="main" className='min-h-screen w-full bg-[url("../assets/backgroundMain.png")] relative'>
+      <div className="h-full w-full flex items-center justify-between px-16  pt-16">
         <div className="w-2/4">
-          <div className="font-SpaceGrotesk text-6xl font-semibold flex flex-col gap-2 mb-16">
+          <div className="font-SpaceGrotesk text-5xl font-semibold flex flex-col gap-2 mb-16">
             <h2>Oi, eu sou o</h2>
             <h2 className="text-orange-500">Weslley Ferreira</h2>
             <h2>Front-End Developer</h2>
@@ -17,9 +17,9 @@ export function Main() {
             desenvolvimento de Backend.
           </p>
         </div>
-        <img src={ImageMain} alt="" className="h-96" />
+        <img src={ImageMain} alt="" className="h-80" />
       </div>
-      <div className="animate-bounce mt-5 flex flex-col items-center">
+      <div className="animate-bounce mt-16 flex flex-col items-center">
         <Mouse />
         <ArrowBigDownDash />
       </div>

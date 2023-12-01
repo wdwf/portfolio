@@ -6,13 +6,13 @@ import { Ability } from './sections/Ability';
 import { About } from './sections/About';
 import { Follow } from './sections/Follow';
 import { Main } from './sections/Main';
-import { Methods } from './sections/Methods';
+// import { Methods } from './sections/Methods';
 import { Projects } from './sections/Projects';
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex items-center justify-center bg-zinc-900 text-zinc-50 flex-col">
+      <div className="flex items-center justify-center bg-zinc-900 text-zinc-50 flex-col relative">
         <Nav />
         {/* <p className='bg-sky-500'>Hello</p>
           <Button success className='w-20'>
@@ -25,7 +25,7 @@ function App() {
         <Main />
         <About />
         <Projects />
-        <Methods />
+        {/* <Methods /> */}
         <Ability />
         <Follow />
         <Footer />
