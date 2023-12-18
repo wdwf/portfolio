@@ -42,9 +42,9 @@ export function Nav() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <path d="M18 6 6 18" />
               <path d="m6 6 12 12" />
@@ -58,9 +58,9 @@ export function Nav() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             >
               <line x1="4" x2="20" y1="12" y2="12" />
               <line x1="4" x2="20" y1="6" y2="6" />
@@ -85,6 +85,7 @@ export function Nav() {
         dark:bg-zinc-900
         dark:text-white
         px-3
+        z-10
         `}
       >
         <ul

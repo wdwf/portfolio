@@ -4,7 +4,7 @@ import { Nav } from './components/Nav';
 import { Main } from './sections/Main';
 import { ThemeProvider } from './context/ThemeContext';
 // import { Ability } from './sections/Ability';
-// import { About } from './sections/About';
+import { About } from './sections/About';
 // import { Follow } from './sections/Follow';
 // import { Methods } from './sections/Methods';
 // import { Projects } from './sections/Projects';
@@ -12,7 +12,7 @@ import { ThemeProvider } from './context/ThemeContext';
 function App() {
   return (
     <ThemeProvider>
-      <div className="w-full flex items-center justify-center bg-zinc-900 text-zinc-50 flex-col relative">
+      <div className="w-full flex items-center justify-center bg-zinc-300 text-black dark:bg-zinc-900 dark:text-zinc-50 flex-col relative">
         <Nav />
         {/* <p className='bg-sky-500'>Hello</p>
           <Button success className='w-20'>
@@ -23,7 +23,7 @@ function App() {
           <Button>Sign In</Button> */}
 
         <Main />
-        {/* <About /> */}
+        <About />
         {/* <Projects /> */}
         {/* <Methods /> */}
         {/* <Ability /> */}
