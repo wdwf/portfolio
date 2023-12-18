@@ -1,18 +1,18 @@
 // import { Button } from './components/Button';
-import { Footer } from './components/Footer';
+// import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
-import { ThemeProvider } from './context/ThemeContext';
-import { Ability } from './sections/Ability';
-import { About } from './sections/About';
-import { Follow } from './sections/Follow';
 import { Main } from './sections/Main';
+import { ThemeProvider } from './context/ThemeContext';
+// import { Ability } from './sections/Ability';
+// import { About } from './sections/About';
+// import { Follow } from './sections/Follow';
 // import { Methods } from './sections/Methods';
-import { Projects } from './sections/Projects';
+// import { Projects } from './sections/Projects';
 
 function App() {
   return (
     <ThemeProvider>
-      <div className="flex items-center justify-center bg-zinc-900 text-zinc-50 flex-col relative">
+      <div className="w-full flex items-center justify-center bg-zinc-900 text-zinc-50 flex-col relative">
         <Nav />
         {/* <p className='bg-sky-500'>Hello</p>
           <Button success className='w-20'>
@@ -23,12 +23,12 @@ function App() {
           <Button>Sign In</Button> */}
 
         <Main />
-        <About />
-        <Projects />
+        {/* <About /> */}
+        {/* <Projects /> */}
         {/* <Methods /> */}
-        <Ability />
-        <Follow />
-        <Footer />
+        {/* <Ability /> */}
+        {/* <Follow /> */}
+        {/* <Footer /> */}
       </div>
     </ThemeProvider>
   );

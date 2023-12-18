@@ -6,7 +6,7 @@ export function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-3">
-      <label htmlFor="flexSwitch" className="inline-block pl-[0.15rem] hover:cursor-pointer">
+      <label htmlFor="flexSwitch" className="inline-block hover:cursor-pointer w-12">
         {currentTheme === 'light' ? 'Claro' : 'Escuro'}
       </label>
 
