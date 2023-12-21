@@ -6,7 +6,7 @@ import photo from '../assets/photo.png';
 export function About() {
   return (
     <section id="about" className="w-full min-h-screen mt-3">
-      <div className="bg-zinc-300 text-black flex items-center py-6 pl-5 gap-9 justify-between">
+      <div className="bg-zinc-300 text-black flex items-center py-6 pl-5 lg:pl-16 gap-9 justify-between">
         <div>
           <p className="text-3xl font-black font-Modelica02B">Inicio</p>
           <p className="text-xl font-black font-Modelica02M">Agosto, Terça-feira 1, 2017</p>
@@ -17,14 +17,14 @@ export function About() {
         <img src={shape} alt="forma simples" className="h-3/5 mr-7 hidden lg:block" />
       </div>
       <div className="w-full flex flex-col lg:flex-row">
-        <div className="font-Satoshi text-gray-400 py-5 px-5 leading-8">
-          <p className="mb-8">
+        <div className="font-Satoshi text-gray-700 dark:text-gray-400 py-5 xl:pt-14 lg:pt-10 px-5 lg:pl-16 leading-8">
+          <p className="mb-8 ">
             Iniciei minha jornada como desenvolvedor Front-End em 2017 por meio do curso de desenhista de páginas para
             web disponibilizado pelo SENAI. Desde então, sigo praticando e desenvolvendo minhas hard skills (Logica de
             Programação, Engenharia de Software, Desenvolvimento de Banco de dados) através de projetos pessoais e
             profissionais.
           </p>
-          <p>
+          <p className="">
             Ja atuei em projetos sociais por meio da ong Perifacode, dando aulas de desenvolvimento web (HTML, CSS,
             Javascript). Deste modo auxiliando os demais e prosseguindo com o desenvolvimento de conhecimentos voltados
             a área de programação.

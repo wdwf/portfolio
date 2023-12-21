@@ -3,8 +3,8 @@
 import { Nav } from './components/Nav';
 import { Main } from './sections/Main';
 import { ThemeProvider } from './context/ThemeContext';
-// import { Ability } from './sections/Ability';
 import { About } from './sections/About';
+import { Ability } from './sections/Ability';
 // import { Follow } from './sections/Follow';
 // import { Methods } from './sections/Methods';
 // import { Projects } from './sections/Projects';
@@ -26,7 +26,7 @@ function App() {
         <About />
         {/* <Projects /> */}
         {/* <Methods /> */}
-        {/* <Ability /> */}
+        <Ability />
         {/* <Follow /> */}
         {/* <Footer /> */}
       </div>

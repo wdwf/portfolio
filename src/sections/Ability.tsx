@@ -5,12 +5,12 @@ export function Ability() {
   return (
     <section
       id="ability's"
-      className="bg-zinc-300 text-black flex items-center px-16 gap-9 justify-between w-full min-h-screen"
+      className="bg-zinc-300 text-black flex flex-col-reverse md:flex-row items-center lg:px-16 px-5 gap-9 justify-between w-full min-h-screen"
     >
       <article className="h-3/5">
-        <img src={abilitys} alt="" className="p-5" />
+        <img src={abilitys} alt="" className="p-5 lg:w-[70%] xl:w-[90%]" />
       </article>
-      <article className="w-[42%]">
+      <article className=" w-full lg:w-[60%]">
         <div className="flex items-center mb-8">
           <h3 className="text-5xl font-black font-SpaceGrotesk">Habilidades</h3>
           <img src={shapeAbility} alt="" className="h-6 mt-2 ml-[2px]" />
