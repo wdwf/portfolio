@@ -5,7 +5,7 @@ import { Main } from './sections/Main';
 import { ThemeProvider } from './context/ThemeContext';
 import { About } from './sections/About';
 import { Ability } from './sections/Ability';
-// import { Follow } from './sections/Follow';
+import { Follow } from './sections/Follow';
 // import { Methods } from './sections/Methods';
 // import { Projects } from './sections/Projects';
 
@@ -27,7 +27,7 @@ function App() {
         {/* <Projects /> */}
         {/* <Methods /> */}
         <Ability />
-        {/* <Follow /> */}
+        <Follow />
         {/* <Footer /> */}
       </div>
     </ThemeProvider>

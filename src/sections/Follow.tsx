@@ -5,8 +5,8 @@ export function Follow() {
   return (
     <section id="follow" className="w-full flex flex-col items-center py-16">
       <img src={work} alt="" className="w-40 animate-spinSlow" />
-      <h3 className="text-5xl font-black font-SpaceGrotesk py-16">Vamos Trabalha juntos</h3>
-      <div className="flex gap-8">
+      <h3 className="text-4xl md:text-5xl text-center font-black font-SpaceGrotesk py-16">Vamos Trabalha juntos</h3>
+      <div className="flex flex-col md:flex-row gap-8">
         <a
           href="mailto:weslley.lw@outlook.com"
           className="
