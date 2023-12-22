@@ -35,12 +35,12 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
 - [x] Criar estrutura inicial do projeto
 - [x] Estilizar o layout com Tailwind CSS
 - [ ] Adicionar seção de projetos
-  - [ ] Seção Nav
-  - [ ] Seção Principal
-  - [ ] Seção Sobre
+  - [x] Seção Nav
+  - [x] Seção Principal
+  - [x] Seção Sobre
   - [ ] Seção Projetos
   - [ ] Seção Método de Desenvolvimento
-  - [ ] Seção Habilidades
+  - [x] Seção Habilidades
   - [ ] Seção Seguir
   - [ ] Seção Roda pé
 - [ ] Integrar o Figma para design responsivo
