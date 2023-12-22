@@ -2,8 +2,8 @@ import { Github, Linkedin } from 'lucide-react';
 
 export function Footer() {
   return (
-    <section className="w-full flex justify-center">
-      <div className="w-4/5 flex justify-between border-t border-gray-600 py-8 font-semibold font-Satoshi">
+    <section className="px-5 w-full flex justify-center">
+      <div className="w-full flex flex-col md:flex-row gap-8 md:gap-5 justify-between border-t border-gray-600 py-8 font-semibold font-Satoshi">
         <article>
           <p>© 2022 LoopW - Weslley Ferreira</p>
         </article>
@@ -15,7 +15,7 @@ export function Footer() {
             <Github />
           </a>
         </article>
-        <ul className="flex gap-8">
+        <ul className="flex flex-wrap gap-8 ">
           <li>
             <a href="#main">Principal</a>
           </li>

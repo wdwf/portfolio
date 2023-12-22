@@ -1,10 +1,10 @@
 import { ChevronRight } from 'lucide-react';
-import work from '../assets/WORK.png';
+import { CircleWork } from '../assets/circleWork';
 
 export function Follow() {
   return (
     <section id="follow" className="w-full flex flex-col items-center py-16">
-      <img src={work} alt="" className="w-40 animate-spinSlow" />
+      <CircleWork svgAnimate="animate-spinSlow" className="dark:fill-white fill-zinc-900" />
       <h3 className="text-4xl md:text-5xl text-center font-black font-SpaceGrotesk py-16">Vamos Trabalha juntos</h3>
       <div className="flex flex-col md:flex-row gap-8">
         <a

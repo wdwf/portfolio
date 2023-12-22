@@ -11,7 +11,7 @@ export function Ability() {
         <img src={abilitys} alt="" className="p-5 lg:w-[70%] xl:w-[90%]" />
       </article>
       <article className=" w-full lg:w-[60%]">
-        <div className="flex items-center mb-8">
+        <div className="flex items-center mb-8 pt-6">
           <h3 className="text-5xl font-black font-SpaceGrotesk">Habilidades</h3>
           <img src={shapeAbility} alt="" className="h-6 mt-2 ml-[2px]" />
         </div>

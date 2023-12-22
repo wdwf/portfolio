@@ -1,13 +1,13 @@
 // import { Button } from './components/Button';
-// import { Footer } from './components/Footer';
 import { Nav } from './components/Nav';
 import { Main } from './sections/Main';
 import { ThemeProvider } from './context/ThemeContext';
 import { About } from './sections/About';
 import { Ability } from './sections/Ability';
 import { Follow } from './sections/Follow';
+import { Footer } from './components/Footer';
 // import { Methods } from './sections/Methods';
-// import { Projects } from './sections/Projects';
+import { Projects } from './sections/Projects';
 
 function App() {
   return (
@@ -24,11 +24,11 @@ function App() {
 
         <Main />
         <About />
-        {/* <Projects /> */}
+        <Projects />
         {/* <Methods /> */}
         <Ability />
         <Follow />
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </ThemeProvider>
   );

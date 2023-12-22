@@ -5,7 +5,7 @@ import photo from '../assets/photo.png';
 
 export function About() {
   return (
-    <section id="about" className="w-full min-h-screen mt-3">
+    <section id="about" className="w-full mt-3">
       <div className="bg-zinc-300 text-black flex items-center py-6 pl-5 lg:pl-16 gap-9 justify-between">
         <div>
           <p className="text-3xl font-black font-Modelica02B">Inicio</p>
