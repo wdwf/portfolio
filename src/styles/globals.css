@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @font-face {
   font-family: 'SpaceGrotesk-Variable';
   src: url('../assets/fonts/SpaceGrotesk-Variable.ttf');
@@ -17,4 +25,8 @@
 @font-face {
   font-family: 'Modelica02-Bold';
   src: url('../assets/fonts/BwModelicaSS02-Bold.otf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/RobotoCondensed.ttf');
 }

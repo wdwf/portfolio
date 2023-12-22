@@ -11,6 +11,7 @@ export default {
         Satoshi: ['Satoshi-Variable'],
         Modelica02M: ['Modelica02-Medium'],
         Modelica02B: ['Modelica02-Bold'],
+        Roboto: ['Roboto'],
       },
     },
   },
