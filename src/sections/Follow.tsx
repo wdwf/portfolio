@@ -1,5 +1,5 @@
 import { ChevronRight } from 'lucide-react';
-import { CircleWork } from '../assets/circleWork';
+import { CircleWork } from '../assets/CircleWork';
 
 export function Follow() {
   return (
