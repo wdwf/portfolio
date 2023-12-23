@@ -8,7 +8,7 @@ export function Projects() {
       <AreaWIP />
       <div className="blur-md">
         <div className="flex flex-col lg:flex-row pb-8 px-8 justify-between">
-          <div className="text-3xl lg:text-5xl font-Modelica02B text-center lg:text-left mb-6">
+          <div className="text-3xl lg:text-5xl lg:pl-16 font-Modelica02B text-center lg:text-left mb-6">
             <h3>Projetos</h3>
             <h3>Desenvolvidos</h3>
           </div>

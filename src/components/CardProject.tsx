@@ -13,8 +13,8 @@ export interface CardProps {
 export function CardProjects({ title, description, image, frameworks }: CardProps) {
   return (
     <section className="relative rounded-xl bg-slate-100 w-11/12 text-slate-950 lg:flex lg:h-[280px] lg:max-w-5xl">
-      <div className="w-9 h-9 dark:bg-zinc-900 bg-slate-100 rounded-full absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-top-1 lg:top-1/2 lg:left-0"></div>
-      <div className="w-9 h-9 dark:bg-zinc-900 bg-slate-100 rounded-full absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 md:-bottom-1 lg:top-1/2 lg:right-0 lg:-translate-y-1/2 lg:translate-x-1/2 lg:left-auto"></div>
+      <div className="w-9 h-9 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-top-1 lg:top-1/2 lg:left-0"></div>
+      <div className="w-9 h-9 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 md:-bottom-1 lg:top-1/2 lg:right-0 lg:-translate-y-1/2 lg:translate-x-1/2 lg:left-auto"></div>
 
       <div className="relative p-3 md:p-7 lg:p-4 lg:flex lg:justify-center">
         <img src={image} alt="imagem do projeto" className="rounded-md 2xl:object-cover" />
@@ -26,14 +26,14 @@ export function CardProjects({ title, description, image, frameworks }: CardProp
       </div>
 
       <div className="relative w-full my-2 md:my-1 h-2 lg:hidden">
-        <div className="w-3 h-3 dark:bg-zinc-900 bg-slate-100 rounded-full absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-[40%] z-10"></div>
-        <div className="w-3 h-3 dark:bg-zinc-900 bg-slate-100 rounded-full absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-[40%] z-10"></div>
+        <div className="w-3 h-3 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-[40%] z-10"></div>
+        <div className="w-3 h-3 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-[40%] z-10"></div>
         <div className="w-full h-[1px] border-t-1  border-dashed border-[1px] border-gray-500 absolute top-1/2 transform -translate-x-1 translate-y-1/2"></div>
       </div>
 
       <div className="hidden relative lg:block w-2 h-full">
-        <div className="w-3 h-3 dark:bg-zinc-900 bg-slate-100 rounded-full absolute -top-0 transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
-        <div className="w-3 h-3 dark:bg-zinc-900 bg-slate-100 rounded-full absolute -bottom-0 transform -translate-x-1/2 translate-y-1/2 z-10"></div>
+        <div className="w-3 h-3 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -top-0 transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
+        <div className="w-3 h-3 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -bottom-0 transform -translate-x-1/2 translate-y-1/2 z-10"></div>
         <div className="w-[1px] h-full border-l-1 border-dashed border-[1px] border-gray-500 "></div>
       </div>
 
