@@ -11,23 +11,26 @@ export function Nav() {
 
   return (
     <nav
-      className="
-      w-full
-      flex 
-      justify-between 
-      items-center
-      lg:px-16
-      px-5 
-      lg:py-6
-      py-5
-      border-b 
-      border-gray-400 
-      font-SpaceGrotesk
-      bg-zinc-300
-      text-black
-      dark:bg-zinc-900
-      dark:text-white
-    "
+      className={`
+    w-full
+    flex 
+    justify-between 
+    items-center
+    lg:px-16
+    px-5 
+    lg:py-6
+    py-5
+    border-b 
+    border-gray-400 
+    bg-zinc-300
+    text-black
+    dark:bg-zinc-900
+    dark:text-white
+    ${mobileMenuOpen ? 'fixed top-0 z-50' : ''}
+    //fixed
+    //top-0
+    //z-50
+    `}
     >
       <Logo className="dark:fill-white fill-black" />
 
@@ -92,20 +95,28 @@ export function Nav() {
           className="
           text-base 
           mr-20
-          
+          2xl:text-3xl
         "
         >
-          <li className="p-2 hover:bg-zinc-800">
-            <a href="#about">Sobre</a>
+          <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
+            <a className="font-SpaceGrotesk" href="#about">
+              Sobre
+            </a>
           </li>
-          <li className="p-2 hover:bg-zinc-800">
-            <a href="#projects">Projetos</a>
+          <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
+            <a className="font-SpaceGrotesk" href="#projects">
+              Projetos
+            </a>
           </li>
-          <li className="p-2 hover:bg-zinc-800">
-            <a href="#ability's">Habilidades</a>
+          <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
+            <a className="font-SpaceGrotesk" href="#ability's">
+              Habilidades
+            </a>
           </li>
-          <li className="p-2 hover:bg-zinc-800">
-            <a href="#follow">Contato</a>
+          <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
+            <a className="font-SpaceGrotesk" href="#follow">
+              Contato
+            </a>
           </li>
         </ul>
         <div className="p-2">
@@ -127,19 +138,28 @@ export function Nav() {
             gap-10 
             text-base 
             mr-20
+            2xl:text-3xl
             "
         >
           <li>
-            <a href="#about">Sobre</a>
+            <a className="font-SpaceGrotesk" href="#about">
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="#projects">Projetos</a>
+            <a className="font-SpaceGrotesk" href="#projects">
+              Projetos
+            </a>
           </li>
           <li>
-            <a href="#ability's">Habilidades</a>
+            <a className="font-SpaceGrotesk" href="#ability's">
+              Habilidades
+            </a>
           </li>
           <li>
-            <a href="#follow">Contato</a>
+            <a className="font-SpaceGrotesk" href="#follow">
+              Contato
+            </a>
           </li>
         </ul>
         <ThemeSwitch />

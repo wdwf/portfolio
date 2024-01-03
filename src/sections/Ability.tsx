@@ -7,15 +7,15 @@ export function Ability() {
       id="ability's"
       className="bg-zinc-300 text-black flex flex-col-reverse md:flex-row items-center lg:px-16 px-5 gap-9 justify-between w-full min-h-screen"
     >
-      <article className="h-3/5">
-        <img src={abilitys} alt="" className="p-5 lg:w-[70%] xl:w-[90%]" />
+      <article className="h-3/5 2xl:w-[24%]">
+        <img src={abilitys} alt="" className="p-5 lg:w-[70%] xl:w-[90%] 2xl:w-full" />
       </article>
       <article className=" w-full lg:w-[60%]">
         <div className="flex items-center mb-8 pt-6">
-          <h3 className="text-5xl font-black font-SpaceGrotesk">Habilidades</h3>
-          <img src={shapeAbility} alt="" className="h-6 mt-2 ml-[2px]" />
+          <h3 className="text-5xl 2xl:text-8xl font-black font-SpaceGrotesk">Habilidades</h3>
+          <img src={shapeAbility} alt="" className="h-6 2xl:h-12 mt-2 ml-[2px] 2xl:ml-[10px]" />
         </div>
-        <p className="font-Satoshi text-gray-600 leading-8">
+        <p className="font-Satoshi text-gray-600 leading-8 2xl:leading-loose 2xl:text-4xl">
           Dominando o universo do desenvolvimento, minhas habilidades englobam{' '}
           <span className="font-bold">JavaScript</span> e <span className="font-bold">TypeScript</span> para lógica
           robusta, <span className="font-bold">Java</span> para soluções escaláveis,{' '}
