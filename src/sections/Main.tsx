@@ -14,10 +14,10 @@ export function Main() {
             <h2 className="font-SpaceGrotesk text-indigo-600  dark:text-orange-500">Weslley Ferreira</h2>
             <h2 className="font-SpaceGrotesk">Front-End Developer</h2>
           </div>
-          <p className="font-Satoshi dark:text-gray-400 text-gray-700 leading-8 md:w-[98%] lg:w-[85%] md:text-left text-center 2xl:text-4xl 2xl:leading-loose 2xl:w-[78%]">
-            Formado em Analise e Desenvolvimento de Sistemas, com foco para a web. Especializado como Desenvolvedor
-            FrontEnd, sou habilidoso no desenvolvimento de páginas estáticas, UI design e também possuo conhecimentos no
-            desenvolvimento de Backend.
+          <p className="font-Satoshi dark:text-gray-400 text-gray-700 leading-8 md:w-[98%] lg:w-[85%] md:text-left text-center 2xl:text-3xl 2xl:leading-loose 2xl:w-[78%]">
+            Formado em Análise e Desenvolvimento de Sistemas, com foco para a web. Especializado como Desenvolvedor
+            Front-End, sou habilidoso no desenvolvimento de páginas estáticas, UI design e também possuo conhecimentos
+            no desenvolvimento de Backend.
           </p>
         </div>
         <img src={ImageMain} alt="Imagem com stickers e um W grande" className="w-full md:w-2/4 md:h-full lg:w-2/5" />

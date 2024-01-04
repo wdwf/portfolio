@@ -12,9 +12,10 @@ import { Projects } from './sections/Projects';
 function App() {
   return (
     <ThemeProvider>
-      <div className="w-full flex items-center justify-center bg-zinc-300 text-black dark:bg-zinc-900 dark:text-zinc-50 flex-col relative">
-        <Nav />
-        {/* <p className='bg-sky-500'>Hello</p>
+      <div className="w-full bg-zinc-300 dark:bg-zinc-900">
+        <div className="max-w-[2000px] m-auto w-full flex items-center justify-center bg-zinc-300 text-black dark:bg-zinc-900 dark:text-zinc-50 flex-col relative">
+          <Nav />
+          {/* <p className='bg-sky-500'>Hello</p>
           <Button success className='w-20'>
             Sign In
           </Button>
@@ -22,13 +23,14 @@ function App() {
           <Button size='xs'>Sign In</Button>
           <Button>Sign In</Button> */}
 
-        <Main />
-        <About />
-        <Projects />
-        {/* <Methods /> */}
-        <Ability />
-        <Follow />
-        <Footer />
+          <Main />
+          <About />
+          <Projects />
+          {/* <Methods /> */}
+          <Ability />
+          <Follow />
+          <Footer />
+        </div>
       </div>
     </ThemeProvider>
   );

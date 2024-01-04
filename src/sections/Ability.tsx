@@ -15,7 +15,7 @@ export function Ability() {
           <h3 className="text-5xl 2xl:text-8xl font-black font-SpaceGrotesk">Habilidades</h3>
           <img src={shapeAbility} alt="" className="h-6 2xl:h-12 mt-2 ml-[2px] 2xl:ml-[10px]" />
         </div>
-        <p className="font-Satoshi text-gray-600 leading-8 2xl:leading-loose 2xl:text-4xl">
+        <p className="font-Satoshi text-gray-600 leading-8 2xl:leading-loose 2xl:text-3xl">
           Dominando o universo do desenvolvimento, minhas habilidades englobam{' '}
           <span className="font-bold">JavaScript</span> e <span className="font-bold">TypeScript</span> para lógica
           robusta, <span className="font-bold">Java</span> para soluções escaláveis,{' '}
