@@ -1,28 +1,40 @@
 import { ReactNode } from 'react';
-import Loopw from '../assets/loopw.png';
 import codeBar from '../assets/codeBar.png';
+import { motion } from 'framer-motion';
 
 export interface CardProps {
   title: string;
+  link: string;
   description: string;
   image: string;
   children?: ReactNode;
   frameworks: string[];
+  imgIndex: number;
+  idx: number;
+  transition: {
+    type: string;
+    mass: number;
+    stiffness: number;
+    damping: number;
+  };
 }
 
-export function CardProjects({ title, description, image, frameworks }: CardProps) {
+export function CardProjects({ title, link, description, image, frameworks, imgIndex, idx, transition }: CardProps) {
   return (
-    <section className="relative rounded-xl bg-slate-100 w-11/12 text-slate-950 lg:flex lg:h-[280px] lg:max-w-5xl">
+    <motion.div
+      animate={{
+        scale: imgIndex === idx ? 0.95 : 0.85,
+      }}
+      transition={transition}
+      className="aspect-video w-screen shrink-0 relative rounded-xl bg-slate-100  text-slate-950 lg:flex lg:h-[280px] lg:max-w-5xl"
+    >
       <div className="w-9 h-9 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:-top-1 lg:top-1/2 lg:left-0"></div>
       <div className="w-9 h-9 dark:bg-zinc-900 bg-zinc-300 rounded-full absolute -bottom-2 left-1/2 transform -translate-x-1/2 translate-y-1/2 md:-bottom-1 lg:top-1/2 lg:right-0 lg:-translate-y-1/2 lg:translate-x-1/2 lg:left-auto"></div>
 
-      <div className="relative p-3 md:p-7 lg:p-4 lg:flex lg:justify-center">
-        <img src={image} alt="imagem do projeto" className="rounded-md 2xl:object-cover" />
-        <img
-          src={Loopw}
-          alt="logo do portfolio"
-          className="absolute -top-7 -right-8 scale-50 md:scale-75 md:-top-2 md:-right-2"
-        />
+      <div className="p-3 md:p-7 lg:p-8 lg:w-[100%] flex items-center justify-center">
+        <a href={link} target="_blank">
+          <img src={image} alt="imagem do projeto" className="max-h-[350px]" />
+        </a>
       </div>
 
       <div className="relative w-full my-2 md:my-1 h-2 lg:hidden">
@@ -37,7 +49,7 @@ export function CardProjects({ title, description, image, frameworks }: CardProp
         <div className="w-[1px] h-full border-l-1 border-dashed border-[1px] border-gray-500 "></div>
       </div>
 
-      <div className="w-full justify-between p-3 pb-5 lg:px-7 lg:flex lg:relative">
+      <div className="w-full justify-between p-3 pb-5 lg:px-7 lg:flex lg:relative lg:w-[80%]">
         <div className="flex md:gap-12">
           <div className="">
             <div>
@@ -84,6 +96,6 @@ export function CardProjects({ title, description, image, frameworks }: CardProp
           <img src={codeBar} alt="código de barrar" className="scale-[.65]" />
         </div>
       </div>
-    </section>
+    </motion.div>
   );
 }
