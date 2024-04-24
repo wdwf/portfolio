@@ -64,7 +64,7 @@ export function CardProjects({ title, link, description, image, frameworks, imgI
                     key={index}
                     className="flex justify-center items-center border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]"
                   >
-                    <img src={`../public/${tech}.png`} alt="" />
+                    <img src={tech} alt="" />
                   </div>
                 ))}
               </div>

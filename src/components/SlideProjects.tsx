@@ -3,6 +3,9 @@ import { motion, useMotionValue } from 'framer-motion';
 import ThumbnailProjectOne from '../assets/ThumbnailProjectOne.png';
 import ThumbnailProjectTwo from '../assets/ThumbnailProjectTwo.png';
 import ThumbnailProjectThree from '../assets/ThumbnailProjectThree.png';
+import reactIcon from '../assets/react.png';
+import typescriptIcon from '../assets/typescript.png';
+
 import { useEffect, useState } from 'react';
 import Dots from './Dots';
 import { CardProjects } from './CardProject';
@@ -12,7 +15,7 @@ const projects = [
     title: 'PORTFOLIO',
     description: 'Criei essa pagina para mostrar meus projetos e demostrar meus conhecimentos.',
     image: ThumbnailProjectOne,
-    frameworks: ['React', 'typescript'],
+    frameworks: [reactIcon, typescriptIcon],
     link: 'https://loopw.tech/',
   },
   {
@@ -20,14 +23,14 @@ const projects = [
     description:
       'Projeto para composição de teste voltado para o frontend simulando carrinho de compras de um e-commerce.',
     image: ThumbnailProjectTwo,
-    frameworks: ['React', 'typescript'],
+    frameworks: [reactIcon, typescriptIcon],
     link: 'https://hmd-project.vercel.app/',
   },
   {
     title: 'Pass In Web',
     description: 'Projeto que simula uma aplicação de gestão de eventos e participantes.',
     image: ThumbnailProjectThree,
-    frameworks: ['React', 'typescript'],
+    frameworks: [reactIcon, typescriptIcon],
     link: 'https://wdwf.github.io/pass-in-web/',
   },
 ];
