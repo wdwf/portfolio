@@ -7,8 +7,6 @@ import { useEffect, useState } from 'react';
 import Dots from './Dots';
 import { CardProjects } from './CardProject';
 
-// const imgs = [ThumbnailProjectOne, ThumbnailProjectTwo, ThumbnailProjectThree];
-
 const projects = [
   {
     title: 'PORTFOLIO',
@@ -109,19 +107,6 @@ export default function SlideProjects() {
                 frameworks={projSrc.frameworks}
               />
             </div>
-            // <motion.div
-            //   key={idx}
-            //   style={{
-            //     backgroundImage: `url(${projSrc})`,
-            //     backgroundSize: 'cover',
-            //     backgroundPosition: 'center',
-            //   }}
-            //   animate={{
-            //     scale: imgIndex === idx ? 0.95 : 0.85,
-            //   }}
-            //   transition={SPRING_OPTIONS}
-            //   className="aspect-video w-screen shrink-0 rounded-xl bg-neutral-800 object-cover"
-            // />
           );
         })}
       </motion.div>
