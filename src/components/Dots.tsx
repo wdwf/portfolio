@@ -16,7 +16,7 @@ export default function Dots({
 }) {
   return (
     <div className="mt-4 flex w-full justify-center gap-2">
-      {projects.map((project, idx) => {
+      {projects.map((_, idx) => {
         return (
           <button
             className={`h-3 w-3 rounded-full transition-colors ${
