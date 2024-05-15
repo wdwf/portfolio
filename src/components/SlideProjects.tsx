@@ -3,8 +3,9 @@ import { motion, useMotionValue } from 'framer-motion';
 import ThumbnailProjectOne from '../assets/ThumbnailProjectOne.png';
 import ThumbnailProjectTwo from '../assets/ThumbnailProjectTwo.png';
 import ThumbnailProjectThree from '../assets/ThumbnailProjectThree.png';
-import reactIcon from '../assets/react.png';
-import typescriptIcon from '../assets/typescript.png';
+import react from '../assets/react.png';
+import typescript from '../assets/typescript.png';
+import figma from '../assets/figma.png';
 
 import { useEffect, useState } from 'react';
 import Dots from './Dots';
@@ -15,7 +16,7 @@ const projects = [
     title: 'PORTFOLIO',
     description: 'Criei essa pagina para mostrar meus projetos e demostrar meus conhecimentos.',
     image: ThumbnailProjectOne,
-    frameworks: [reactIcon, typescriptIcon],
+    frameworks: [react, typescript, figma],
     link: 'https://loopw.tech/',
   },
   {
@@ -23,14 +24,14 @@ const projects = [
     description:
       'Projeto para composição de teste voltado para o frontend simulando carrinho de compras de um e-commerce.',
     image: ThumbnailProjectTwo,
-    frameworks: [reactIcon, typescriptIcon],
+    frameworks: [react, typescript],
     link: 'https://hmd-project.vercel.app/',
   },
   {
     title: 'Pass In Web',
     description: 'Projeto que simula uma aplicação de gestão de eventos e participantes.',
     image: ThumbnailProjectThree,
-    frameworks: [reactIcon, typescriptIcon],
+    frameworks: [react, typescript, figma],
     link: 'https://wdwf.github.io/pass-in-web/',
   },
 ];
@@ -97,7 +98,14 @@ export default function SlideProjects() {
       >
         {projects.map((projSrc, idx) => {
           return (
-            <div className="flex w-screen shrink-0 justify-center 2xl:w-[73vw]">
+            <div
+              className="
+              flex
+              w-full
+              shrink-0 
+              justify-center
+            "
+            >
               <CardProjects
                 key={idx}
                 transition={SPRING_OPTIONS}

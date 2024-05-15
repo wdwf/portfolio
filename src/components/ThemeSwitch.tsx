@@ -6,10 +6,6 @@ export function ThemeSwitch() {
 
   return (
     <div className="flex items-center gap-3">
-      <label className="font-SpaceGrotesk inline-block hover:cursor-pointer w-12 2xl:w-28 2xl:text-4xl">
-        {currentTheme === 'light' ? 'Claro' : 'Escuro'}
-      </label>
-
       <input
         type="checkbox"
         id="flexSwitch"
@@ -19,8 +15,6 @@ export function ThemeSwitch() {
         appearance-none
         border
         border-gray-400
-        mr-2 
-        mt-[0.3rem] 
         h-4 
         w-9 
         rounded-[0.4375rem]
@@ -77,6 +71,9 @@ export function ThemeSwitch() {
         defaultChecked={currentTheme === 'light' ? true : false}
         onClick={() => changeCurrentTheme(currentTheme === 'light' ? 'dark' : 'light')}
       />
+      <label className="inter text-sm inline-block hover:cursor-pointer w-12 2xl:w-28 ">
+        {currentTheme === 'light' ? 'Claro' : 'Escuro'}
+      </label>
     </div>
   );
 }
