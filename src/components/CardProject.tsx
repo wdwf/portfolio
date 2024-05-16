@@ -8,7 +8,7 @@ export interface CardProps {
   description: string;
   image: string;
   children?: ReactNode;
-  frameworks: string[];
+  frameworks: { name: string; image: string }[];
   imgIndex: number;
   idx: number;
   transition: {
@@ -62,10 +62,10 @@ export function CardProjects({ title, link, description, image, frameworks, imgI
                 {frameworks.map((tech, index) => (
                   <div className="flex justify-center items-center relative">
                     <div key={index} className=" border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]">
-                      <img src={tech} alt="" />
+                      <img src={tech.image} alt="" />
                     </div>
                     <div className="inter px-1.5 rounded-r-lg border-l-0 text-xs border-2 border-black">
-                      {tech.split('/').pop()?.split('.')[0]}
+                      {tech.name}
                     </div>
                   </div>
                 ))}
@@ -81,11 +81,9 @@ export function CardProjects({ title, link, description, image, frameworks, imgI
               {frameworks.map((tech, index) => (
                 <div className="flex justify-center items-center relative">
                   <div key={index} className=" border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]">
-                    <img src={tech} alt="" />
+                    <img src={tech.image} alt="" />
                   </div>
-                  <div className="inter px-1.5 rounded-r-lg border-l-0 text-xs border-2 border-black">
-                    {tech.split('/').pop()?.split('.')[0]}
-                  </div>
+                  <div className="inter px-1.5 rounded-r-lg border-l-0 text-xs border-2 border-black">{tech.image}</div>
                 </div>
               ))}
             </div>

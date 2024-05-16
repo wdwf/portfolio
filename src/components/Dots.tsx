@@ -11,7 +11,7 @@ export default function Dots({
     title: string;
     description: string;
     image: string;
-    frameworks: string[];
+    frameworks: { name: string; image: string }[];
   }[];
 }) {
   return (
