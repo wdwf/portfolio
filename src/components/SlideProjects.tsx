@@ -16,7 +16,11 @@ const projects = [
     title: 'PORTFOLIO',
     description: 'Criei essa pagina para mostrar meus projetos e demostrar meus conhecimentos.',
     image: ThumbnailProjectOne,
-    frameworks: [react, typescript, figma],
+    frameworks: [
+      { name: 'React', image: react },
+      { name: 'Typescript', image: typescript },
+      { name: 'Figma', image: figma },
+    ],
     link: 'https://loopw.tech/',
   },
   {
@@ -24,14 +28,21 @@ const projects = [
     description:
       'Projeto para composição de teste voltado para o frontend simulando carrinho de compras de um e-commerce.',
     image: ThumbnailProjectTwo,
-    frameworks: [react, typescript],
+    frameworks: [
+      { name: 'React', image: react },
+      { name: 'Typescript', image: typescript },
+    ],
     link: 'https://hmd-project.vercel.app/',
   },
   {
     title: 'Pass In Web',
     description: 'Projeto que simula uma aplicação de gestão de eventos e participantes.',
     image: ThumbnailProjectThree,
-    frameworks: [react, typescript, figma],
+    frameworks: [
+      { name: 'React', image: react },
+      { name: 'Typescript', image: typescript },
+      { name: 'Figma', image: figma },
+    ],
     link: 'https://wdwf.github.io/pass-in-web/',
   },
 ];
