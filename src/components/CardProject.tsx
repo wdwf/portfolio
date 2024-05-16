@@ -53,46 +53,50 @@ export function CardProjects({ title, link, description, image, frameworks, imgI
         <div className="flex md:gap-12">
           <div className="">
             <div>
-              <h3 className="text-orange-500 font-Roboto text-xs font-bold">PROJETO</h3>
-              <h3 className="font-Roboto text-lg lg:text-3xl font-bold">{title}</h3>
+              <h3 className="text-orange-500 inter text-xs">PROJETO</h3>
+              <h3 className="inter text-lg lg:text-3xl font-bold">{title}</h3>
             </div>
-            <div className="hidden lg:block lg:my-6">
-              <p className="font-Satoshi text-sm font-bold mb-2 pl-1">[ Tecnologias utilizadas ]</p>
+            <div className="hidden lg:block lg:my-4">
+              <p className="inter text-sm font-bold mb-2 pl-1">[ Tecnologias utilizadas ]</p>
               <div className="mb-4 flex flex-wrap gap-3 pl-1">
                 {frameworks.map((tech, index) => (
-                  <div
-                    key={index}
-                    className="flex justify-center items-center border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]"
-                  >
-                    <img src={tech} alt="" />
+                  <div className="flex justify-center items-center relative">
+                    <div key={index} className=" border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]">
+                      <img src={tech} alt="" />
+                    </div>
+                    <div className="inter px-1.5 rounded-r-lg border-l-0 text-xs border-2 border-black">
+                      {tech.split('/').pop()?.split('.')[0]}
+                    </div>
                   </div>
                 ))}
               </div>
             </div>
-            <p className="overflow-hidden line-clamp-4 my-3 font-Satoshi font-medium text-sm max-h-24 md:max-w-xs lg:max-w-[17rem]">
+            <p className="overflow-hidden line-clamp-4 my-2 inter font-medium text-sm max-h-24 md:max-w-xs lg:max-w-[19.5rem]">
               {description}
             </p>
           </div>
           <div className="hidden md:block lg:hidden">
-            <p className="font-Satoshi text-sm font-bold mb-4 pl-1">[ Tecnologias utilizadas ]</p>
+            <p className="inter text-sm font-bold mb-4 pl-1">[ Tecnologias utilizadas ]</p>
             <div className="mb-4 flex flex-wrap gap-3 pl-1">
               {frameworks.map((tech, index) => (
-                <div
-                  key={index}
-                  className="flex justify-center items-center border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]"
-                >
-                  <img src={`../public/${tech}.png`} alt="" />
+                <div className="flex justify-center items-center relative">
+                  <div key={index} className=" border-2 border-gray-900 rounded-full w-8 h-8 p-[5px]">
+                    <img src={tech} alt="" />
+                  </div>
+                  <div className="inter px-1.5 rounded-r-lg border-l-0 text-xs border-2 border-black">
+                    {tech.split('/').pop()?.split('.')[0]}
+                  </div>
                 </div>
               ))}
             </div>
             <div className="flex flex-col">
-              <p className="font-Roboto text-[0.50rem] pl-1">PRODUZIDO POR LOOPW</p>
+              <p className="inter text-[0.50rem] pl-1">PRODUZIDO POR LOOPW</p>
               <img src={codeBar} alt="código de barrar" className="" />
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center md:hidden lg:flex lg:justify-end lg:absolute lg:-rotate-90 lg:top-1/2 lg:right-11 lg:transform lg:translate-x-1/2 lg:-translate-y-1/2">
-          <p className="font-Roboto text-[0.50rem] lg:text-center">PRODUZIDO POR LOOPW</p>
+          <p className="inter text-[0.50rem] lg:text-center">PRODUZIDO POR LOOPW</p>
           <img src={codeBar} alt="código de barrar" className="scale-[.65]" />
         </div>
       </div>

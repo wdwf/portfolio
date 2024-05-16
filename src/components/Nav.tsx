@@ -13,6 +13,7 @@ export function Nav() {
     <nav
       className={`
     w-full
+    max-w-7xl
     flex 
     justify-between 
     items-center
@@ -27,12 +28,14 @@ export function Nav() {
     dark:bg-zinc-900
     dark:text-white
     ${mobileMenuOpen ? 'fixed top-0 z-50' : ''}
-    //fixed
-    //top-0
-    //z-50
+    fixed
+    top-0
+    z-50
     `}
     >
-      <Logo className="dark:fill-white fill-black" />
+      <a href="#main">
+        <Logo className="dark:fill-white fill-black" />
+      </a>
 
       <div className="block lg:hidden">
         <button onClick={toggleMobileMenu} className="text-white focus:outline-none">
@@ -93,28 +96,29 @@ export function Nav() {
       >
         <ul
           className="
+          inter
           text-base 
           mr-20
-          2xl:text-3xl
+          //2xl:text-3xl
         "
         >
           <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
-            <a className="font-SpaceGrotesk" href="#about">
+            <a className="inter" href="#about">
               Sobre
             </a>
           </li>
           <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
-            <a className="font-SpaceGrotesk" href="#projects">
+            <a className="inter" href="#projects">
               Projetos
             </a>
           </li>
           <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
-            <a className="font-SpaceGrotesk" href="#ability's">
+            <a className="inter" href="#ability's">
               Habilidades
             </a>
           </li>
           <li className="p-2 hover:bg-zinc-800" onClick={toggleMobileMenu}>
-            <a className="font-SpaceGrotesk" href="#follow">
+            <a className="inter" href="#follow">
               Contato
             </a>
           </li>
@@ -136,28 +140,28 @@ export function Nav() {
           className="
             flex 
             gap-10 
-            text-base 
+            text-sm 
             mr-20
-            2xl:text-3xl
+            //2xl:text-3xl
             "
         >
           <li>
-            <a className="font-SpaceGrotesk" href="#about">
+            <a className="inter" href="#about">
               Sobre
             </a>
           </li>
           <li>
-            <a className="font-SpaceGrotesk" href="#projects">
+            <a className="inter" href="#projects">
               Projetos
             </a>
           </li>
           <li>
-            <a className="font-SpaceGrotesk" href="#ability's">
+            <a className="inter" href="#ability's">
               Habilidades
             </a>
           </li>
           <li>
-            <a className="font-SpaceGrotesk" href="#follow">
+            <a className="inter" href="#follow">
               Contato
             </a>
           </li>
