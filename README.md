@@ -34,16 +34,15 @@ As seguintes ferramentas que foram usadas na construção deste projeto:
 - [x] Criar designer do projeto no Figma
 - [x] Criar estrutura inicial do projeto
 - [x] Estilizar o layout com Tailwind CSS
-- [ ] Adicionar seção de projetos
+- [x] Adicionar seção de projetos
   - [x] Seção Nav
   - [x] Seção Principal
   - [x] Seção Sobre
-  - [ ] Seção Projetos
-  - [ ] Seção Método de Desenvolvimento
+  - [x] Seção Projetos
   - [x] Seção Habilidades
-  - [ ] Seção Seguir
-  - [ ] Seção Roda pé
-- [ ] Integrar o Figma para design responsivo
+  - [x] Seção Seguir
+  - [x] Seção Roda pé
+- [x] Integrar o Figma para design responsivo
 - [ ] Testar e otimizar o desempenho
 
 👨‍💻 Desenvolvido com muita garra por [Weslley Ferreira de Moraes](https://www.linkedin.com/in/weslleyferreira/).
