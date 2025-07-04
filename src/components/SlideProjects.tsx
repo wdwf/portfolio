@@ -3,6 +3,8 @@ import { motion, useMotionValue } from 'framer-motion';
 import ThumbnailProjectOne from '../assets/ThumbnailProjectOne.png';
 import ThumbnailProjectTwo from '../assets/ThumbnailProjectTwo.png';
 import ThumbnailProjectThree from '../assets/ThumbnailProjectThree.png';
+import ThumbnailProjectFour from '../assets/ThumbnailProjectFour.png';
+import ThumbnailProjectFive from '../assets/ThumbnailProjectFive.png';
 import react from '../assets/react.png';
 import typescript from '../assets/typescript.png';
 import figma from '../assets/figma.png';
@@ -44,6 +46,28 @@ const projects = [
       { name: 'Figma', image: figma },
     ],
     link: 'https://wdwf.github.io/pass-in-web/',
+  },
+  {
+    title: 'Game Store',
+    description: 'Concepção do backend de uma plataforma de venda de games.',
+    image: ThumbnailProjectFour,
+    frameworks: [
+      { name: 'React', image: react },
+      { name: 'Typescript', image: typescript },
+      { name: 'Figma', image: figma },
+    ],
+    link: 'https://github.com/wdwf/GameStore',
+  },
+  {
+    title: "Javason's Five",
+    description: 'Esta é o pagina de portfolio desenvolvida pelo meu amado grupo de amigos.',
+    image: ThumbnailProjectFive,
+    frameworks: [
+      { name: 'React', image: react },
+      { name: 'Typescript', image: typescript },
+      { name: 'Figma', image: figma },
+    ],
+    link: 'https://grupo5generation81.github.io/portfolio_team/',
   },
 ];
 
